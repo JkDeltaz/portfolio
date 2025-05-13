@@ -135,6 +135,7 @@ li{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-left: 5%;
 }
 
 .certificado{
@@ -199,4 +200,14 @@ li{
 
 a{
     color: #f5eef2;
+}
+
+#lista-contatos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lista-contatos *{
+    padding: 1%;
 }
