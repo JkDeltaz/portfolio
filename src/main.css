@@ -68,6 +68,7 @@ main{
 
 #nome{
     text-align: center;
+    width: 100vw;
     font-size: 2.2em;
 }
 
@@ -122,16 +123,18 @@ li{
 }
 
 #certificados{
-margin-bottom: 3%;
+    margin-bottom: 3%;
 }
 
 #certificados > h1, #projetos > h1{
     font-size: 2em;
+    width: 100vw;
 }
 
 #lista-certificados{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .certificado{
@@ -139,6 +142,61 @@ margin-bottom: 3%;
     margin: 0 5%;
 }
 
-.projeto-esq{
+.projeto-esq, .projeto-dir{
+    margin-bottom: 5%;
+    display: flex;
+}
+
+.projeto-esq h1, .projeto-dir h1{
+    font-size: 1.6em;
+}
+
+.projeto-esq {
+    display: flex;
+    flex-direction: column; 
     margin-left: 3%;
+    width: 100%;
+}
+
+.projeto-dir {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+}
+
+.projeto-dir > div{
+    margin-left: 2%;
+}
+
+.video-texto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; /* importante para alinhar topo */
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap; /* evita quebra forçada em telas pequenas */
+}
+
+.video-texto > div {
+    flex: 1; /* ocupa o mesmo espaço do vídeo */
+    min-width: 300px; /* evita quebra brusca */
+}
+
+.video-texto p {
+    font-size: 1.2em;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.video-texto video {
+    flex: 1;
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    min-width: 300px;
+}
+
+a{
+    color: #f5eef2;
 }
