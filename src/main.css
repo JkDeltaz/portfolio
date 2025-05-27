@@ -39,6 +39,9 @@ nav > h1:last-child{
     margin-left: 32%;
 }
 
+nav > h1 > a{
+    text-decoration: none;
+}
 
 main{
     margin: 1.5% 5% 5% 0;
@@ -87,19 +90,18 @@ main{
 .descrição{
     font-size: 1.4em;
     font-weight: 400;
-    text-align: left;
+    text-align: justify;
 }
 
 
 #formação{
-    display: flex;
     width: 100vw;
     margin-bottom: 3%;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 50vw 50vw;
 }
 
-#academica, #competências{
-    width: 45vw;
+#academica, #competências, #soft-skills{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,7 +111,18 @@ main{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
-#academica > h1, #competências > h1{
+#soft-skills {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 400px;
+}
+
+#soft-skills > ul li{
+    font-size: 1.3em;
+    margin-bottom: 0.6%;
+}
+
+#academica > h1, #competências > h1, #soft-skills > h1{
     font-size:1.8em;
 }
 
@@ -117,7 +130,7 @@ main{
     margin-bottom: 5%;
 }
 
-li{
+#academica > ul li, #competências > ul li{
     font-size: 1.4em;
     margin-bottom: 3%;
 }
@@ -143,9 +156,17 @@ li{
     margin: 0 5%;
 }
 
+
+.lista-projetos{
+    display: flex;
+    flex-direction: column;
+}
+
 .projeto-esq, .projeto-dir{
     margin-bottom: 5%;
     display: flex;
+    border-radius: 20px;
+    background-color: #B57170;
 }
 
 .projeto-esq h1, .projeto-dir h1{
@@ -163,6 +184,7 @@ li{
     display: flex;
     flex-direction: column; 
     width: 100%;
+    margin-left: 3%;
 }
 
 .projeto-dir > div{
@@ -190,12 +212,22 @@ li{
     margin-bottom: 10px;
 }
 
-.video-texto video {
+.projeto-dir > .video-texto > img {
     flex: 1;
     max-width: 700px;
     width: 100%;
     height: auto;
     min-width: 300px;
+    padding: 0 5% 3% 4%;
+}
+
+.projeto-esq > .video-texto > img {
+    flex: 1;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    min-width: 300px;
+    padding: 0 0 3% 2%;
 }
 
 a{
@@ -209,5 +241,13 @@ a{
 }
 
 #lista-contatos *{
-    padding: 1%;
+    padding: 15px;
+}
+
+#lista-contatos > h1 a{
+    text-decoration: none;
+}
+
+#lista-contatos > h1 a:hover{
+    text-decoration: underline;
 }
