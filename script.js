@@ -119,12 +119,23 @@ const certificado_swiper = new Swiper('#certificados .card-wrapper', {
     }
 });
 
-// Projetos: Carrossel Vertical com Layout Largo
 const projeto_swiper = new Swiper('#projetos .projetos-wrapper', {
+    // Configurações padrão (Desktop)
     direction: "vertical",
     loop: true,
     spaceBetween: 40,
-    // mousewheel: true, // Permite navegar os projetos com o scroll do mouse
+    slidesPerView: 1,
     pagination: { el: '.swiper-pagination', clickable: true },
-    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+
+    // Mudança dinâmica para Celular
+    breakpoints: {
+        0: {
+            direction: "horizontal", // Muda para horizontal no celular
+            autoHeight: true,      // Ajusta a altura conforme o conteúdo
+        },
+        1025: {
+            direction: "vertical",   // Volta para vertical no desktop
+        }
+    }
 });

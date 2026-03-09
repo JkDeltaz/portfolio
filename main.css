@@ -259,14 +259,28 @@ main {
     transform: translateY(-5px);
 }
 
-/* RESPONSIVIDADE */
 @media (max-width: 1024px) {
-    body { zoom: 1; -moz-transform: scale(1); }
-    header { width: 100%; }
-    .projeto-item { flex-direction: column; text-align: center; height: auto; }
-    .projeto-content-left { max-width: 100%; }
-    .projeto-content-right { text-align: center; }
-    .projetos-wrapper { height: auto; }
-    #home, #formação { grid-template-columns: 1fr; text-align: center; }
-    #home { flex-direction: column; }
+    /* Remove a altura fixa para o card crescer com o conteúdo */
+    .projetos-wrapper {
+        height: auto !important; 
+        overflow: visible;
+    }
+
+    .projeto-item {
+        flex-direction: column; /* Empilha: Imagem em cima, texto embaixo */
+        height: auto !important;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .projeto-content-left, 
+    .projeto-content-right {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .projeto-title {
+        font-size: 1.8rem;
+    }
 }
