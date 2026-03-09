@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <title>Caio César - Portfólio</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#nome">Sobre</a>
+            <a href="#formação">Formação</a>
+            <a href="#certificados">Certificações</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contatos">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="nome">Caio César dos Santos</h1>
+
+        <section id="home">
+            <img src="img/foto minha.jpg" id="foto" alt="Caio César">
+            <div id="introdução">
+                <p class="descrição" id="mensagem-saudacao"></p>
+                <p class="descrição">
+                    Sou <strong>Diretor e Programador</strong> no estúdio indie Luna e foco meus estudos 
+                    em desenvolvimento de jogos e aplicativos, com planos para IA e desenvolvimento web.
+                </p>
+            </div>
+        </section>
+
+        <section id="formação">
+            <div class="card-style">
+                <h1>Formação Acadêmica</h1>
+                <p><strong>ADS</strong> - Fatec SJC (2025 - Atual)</p>
+                <p><strong>Ensino Fundamental e Médio Completo</strong></p>
+            </div>
+
+            <div class="card-style">
+                <h1>Competências</h1>
+                <div class="tags-container">
+                    <span class="tech-tag">Inglês C1</span>
+                    <span class="tech-tag">HTML5 & CSS3</span>
+                    <span class="tech-tag">JavaScript & Typescript</span>
+                    <span class="tech-tag">Python & Flask Intermediário</span>
+                    <span class="tech-tag">Java Intermediário</span>
+                    <span class="tech-tag">Git & GitHub</span>
+                </div>
+            </div>
+
+            <div id="soft-skills" class="card-style">
+                <h1>Soft Skills</h1>
+                <p>Liderança ativa no clube NUPA e no Estúdio Luna. Experiência em trabalho em equipe sob prazos de GameJams e proatividade no aprendizado autodidata.</p>
+            </div>
+        </section>
+
+        <section id="certificados">
+            <h1 style="text-align: center; font-size: 3rem; margin-bottom: 50px;">Certificações</h1>
+            <div class="card-wrapper swiper">
+                <ul class="swiper-wrapper">
+                    </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <section id="projetos" style="margin-top: 100px;">
+            <h1 style="text-align: center; font-size: 3rem; margin-bottom: 50px;">Projetos</h1>
+            <div class="projetos-wrapper swiper">
+                <ul class="swiper-wrapper">
+                    </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>                
+            </div>
+        </section>
+
+        <section id="contatos" style="text-align: center; margin: 120px 0;">
+            <h1 style="font-size: 3rem; margin-bottom: 40px;">Contato</h1>
+            <div style="margin-bottom: 60px; display: flex; justify-content: center; gap: 40px;">
+                <a href="https://github.com/JkDeltaz" style="color: var(--primary-color); text-decoration: none; font-weight: bold;">GitHub</a>
+                <a href="mailto:caiocesar.santos1511@gmail.com" style="color: var(--primary-color); text-decoration: none; font-weight: bold;">Email</a>
+                <a href="https://www.linkedin.com/in/caio-c%C3%A9sar-santos-79976636a/" style="color: var(--primary-color); text-decoration: none; font-weight: bold;">Linkedin</a>
+            </div>
+            <a href="img/Currículo Caio.pdf" target="_blank" class="btn-cv">Baixar Currículo PDF</a>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 60px; color: var(--text-dim); border-top: 1px solid rgba(255,255,255,0.05);">
+        &copy; 2026 Caio César dos Santos
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
